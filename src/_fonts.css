@@ -1,0 +1,55 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	@apply mb-[1em];
+	&.is-style-no-margin{
+		@apply mb-0;
+	}
+}
+h1 {
+	@apply text-x-large md:text-xx-large;
+}
+
+h2 {
+	@apply text-large md:text-x-large ;
+}
+h3 {
+	@apply text-medium md:text-large;
+}
+h4 {
+	@apply md:text-medium;
+}
+h5 {
+	@apply text-sm;
+}
+h6 {
+	@apply text-sm;
+}
+
+p {
+	@apply mb-4 leading-tight text-lg;
+	
+	/* Small font size */
+	&.has-small-font-size {
+		line-height: 1.4em;
+	}
+
+	/* No margin */
+	&.is-style-no-margin{
+		@apply mb-0;
+	}
+
+	a{
+		@apply text-primary;
+	}
+}
+
+
+a {
+	&:hover {
+		@apply text-primary;
+	}
+}

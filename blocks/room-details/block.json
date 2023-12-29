@@ -1,0 +1,16 @@
+{
+    "name": "acf/roomdetails",
+    "title": "Room Details",
+    "description": "Afficher les détails d'une chambre.",
+    "category": "content",
+    "icon": "slides",
+    "keywords": ["section"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "roomdetails.php.php"
+    },
+    "supports": {
+        "anchor": true,
+        "jsx": true
+    }
+}

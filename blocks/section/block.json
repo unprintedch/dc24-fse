@@ -1,0 +1,16 @@
+{
+    "name": "acf/section",
+    "title": "Section",
+    "description": "Créer des sections.",
+    "category": "formatting",
+    "icon": "slides",
+    "keywords": ["section"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "section.php"
+    },
+    "supports": {
+        "anchor": true,
+        "jsx": true
+    }
+}
