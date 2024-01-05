@@ -11,7 +11,6 @@
 			"defaultDuotone": false,
 			"defaultPalette": false,
 			"defaultGradients": false,
-			
 			"gradients": [
 				{
 					"slug": "gradient-1",
@@ -102,7 +101,14 @@
 					"slug": "60"
 				}
 			],
-			"units": ["%", "px", "em", "rem", "vh", "vw"]
+			"units": [
+				"%",
+				"px",
+				"em",
+				"rem",
+				"vh",
+				"vw"
+			]
 		},
 		"typography": {
 			"fluid": false,
@@ -174,19 +180,25 @@
 							"fontFamily": "Cardo",
 							"fontStyle": "normal",
 							"fontWeight": "400",
-							"src": ["file:./assets/fonts/cardo/cardo_normal_400.woff2"]
+							"src": [
+								"file:./assets/fonts/cardo/cardo_normal_400.woff2"
+							]
 						},
 						{
 							"fontFamily": "Cardo",
 							"fontStyle": "italic",
 							"fontWeight": "400",
-							"src": ["file:./assets/fonts/cardo/cardo_italic_400.woff2"]
+							"src": [
+								"file:./assets/fonts/cardo/cardo_italic_400.woff2"
+							]
 						},
 						{
 							"fontFamily": "Cardo",
 							"fontStyle": "normal",
 							"fontWeight": "700",
-							"src": ["file:./assets/fonts/cardo/cardo_normal_700.woff2"]
+							"src": [
+								"file:./assets/fonts/cardo/cardo_normal_700.woff2"
+							]
 						}
 					],
 					"fontFamily": "Cardo",
@@ -470,11 +482,15 @@
 				"elements": {
 					"link": {
 						":hover": {
+							"color" :{
+								"text": "var(--wp--preset--color--primary)"
+							},
 							"typography": {
-								"textDecoration": "underline"
+								"textDecoration": "none"
 							}
 						},
 						"typography": {
+							"fontFamily": "Jost",
 							"textDecoration": "none"
 						}
 					}
@@ -554,7 +570,7 @@
 				"typography": {
 					"fontSize": "var(--wp--preset--font-size--small)"
 				},
-				"css":"& .wp-block-post-terms__prefix{color: var(--wp--preset--color--contrast-2);}"
+				"css": "& .wp-block-post-terms__prefix{color: var(--wp--preset--color--contrast-2);}"
 			},
 			"core/post-title": {
 				"elements": {
@@ -675,7 +691,9 @@
 				"elements": {
 					"button": {
 						"border": {
-							"radius": { "ref": "styles.elements.button.border.radius" }
+							"radius": {
+								"ref": "styles.elements.button.border.radius"
+							}
 						}
 					}
 				}
@@ -879,22 +897,30 @@
 	"customTemplates": [
 		{
 			"name": "page-no-title",
-			"postTypes": ["page"],
+			"postTypes": [
+				"page"
+			],
 			"title": "Page No Title"
 		},
 		{
 			"name": "page-with-sidebar",
-			"postTypes": ["page"],
+			"postTypes": [
+				"page"
+			],
 			"title": "Page With Sidebar"
 		},
 		{
 			"name": "page-wide",
-			"postTypes": ["page"],
+			"postTypes": [
+				"page"
+			],
 			"title": "Page with wide Image"
 		},
 		{
 			"name": "single-with-sidebar",
-			"postTypes": ["post"],
+			"postTypes": [
+				"post"
+			],
 			"title": "Single with Sidebar"
 		}
 	]
