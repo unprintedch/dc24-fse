@@ -1,16 +1,22 @@
 {
   "scripts": {
     "dev:css-app": "tailwindcss -i ./src/input.css -o ./dist/output.css --postcss --watch",
-    "dev:css-editor": "tailwindcss -i ./src/editor.css -o ./dist/editor-out.css --postcss",
-    "dev": "concurrently \"npm run dev:css-app\" \"npm run dev:css-editor\""
+    "dev:css-editor": "tailwindcss -i ./src/editor.css -o ./dist/editor-out.css --postcss --watch",
+    "dev:js": "./node_modules/.bin/esbuild ./src/js/scripts.js --bundle --outfile=./dist/app.js --watch",
+    "dev": "concurrently \"npm run dev:css-app\" \"npm run dev:css-editor\" \"npm run dev:js\""
   },
   "devDependencies": {
-    "concurrently": "^6.2.1",
     "autoprefixer": "^10.4.16",
+    "concurrently": "^6.2.1",
     "postcss": "^8.4.32",
     "postcss-import": "^14.0.0",
-		"postcss-nested": "^5.0.3",
-		"postcss-nested-ancestors": "^2.0.0",
-    "tailwindcss": "^3.4.0"
+    "postcss-nested": "^5.0.3",
+    "esbuild": "^0.12.24",
+    "postcss-nested-ancestors": "^2.0.0",
+    "tailwindcss": "^3.4.0",
+    "resolve-url-loader": "^3.1.2"
+  },
+  "dependencies": {
+    "swiper": "^11.0.5"
   }
 }

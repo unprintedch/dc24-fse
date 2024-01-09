@@ -10,7 +10,7 @@
  */
 
 include(get_template_directory() . '/functions/dc24-register-blocks.php');
-include(get_template_directory() . '/functions/dc24-enqueue-styles.php');
+include(get_template_directory() . '/functions/dc24-enqueue.php');
 include(get_template_directory() . '/functions/dc24-editor-styles.php');
 
 

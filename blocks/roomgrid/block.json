@@ -1,0 +1,16 @@
+{
+    "name": "acf/roomgrid",
+    "title": "roomgrid",
+    "description": "Lister les chambres.",
+    "category": "formatting",
+    "icon": "slides",
+    "keywords": ["roomgrid"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "roomgrid.php"
+    },
+    "supports": {
+        "anchor": true,
+        "jsx": true
+    }
+}
